@@ -16,3 +16,14 @@ from module1 import *
 
 #print(season(3))
 
+
+#print(round(bank(1000,10),2),'€')
+
+
+#print(is_prime(3))
+
+
+#print(date(2030,12,15))
+
+
+print(XOR_cipher('guguguga','XOR'))

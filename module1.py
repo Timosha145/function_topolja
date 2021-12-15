@@ -70,3 +70,62 @@
 #	return otvet
 
 
+#def bank(money:int, years:int):
+#	"""
+#	:param int money: сумма вклада
+#	:param int years: срок вклада
+#	:rtype:int
+#	"""
+#	for i in range(years):
+#		money*=1.1
+#	return money
+
+
+#def is_prime(num:int):
+#	"""
+#	:param int num: число
+#	:rtype:bool
+#	"""
+#	count=0
+#	if num<0>=1000:
+#		for i in range(2,10):
+#			if num%i==0:
+#				count+=1
+#			if num==i:
+#				count-=1
+#		if count in [0,1]:
+#			otvet=True
+#		else:
+#			otvet=False
+#	return otvet
+
+
+#def date(d:int,m:int,y:int):
+#	"""
+#	:param int d: день
+#	:param int m: месяц
+#	:param int y: год
+#	:rtype: bool
+#	"""
+#	import datetime
+#	try:
+#		data=datetime.date(y,m,d)
+#		otvet=True
+#	except:
+#		otvet=False
+#	return otvet
+
+
+def XOR_cipher(line:str,key:str):
+	"""
+	:param str line: (не)зашифрованная строка 
+	:param str key: ключ шифрования
+	:rtype: var
+	"""
+	if key=='XOR':
+		cipher = list(line.strip(" "))
+		for i in range(len(cipher)):
+			cipher.insert(i,str(ord(cipher[i])))
+			cipher.pop(i+1)
+	return ''.join(cipher)
+	
