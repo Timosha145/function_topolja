@@ -128,4 +128,4 @@ def XOR_cipher(line:str,key:str):
 			cipher.insert(i,str(ord(cipher[i])))
 			cipher.pop(i+1)
 	return ''.join(cipher)
-	
+	#
